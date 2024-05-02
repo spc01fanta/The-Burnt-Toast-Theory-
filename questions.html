@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./questions.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="questions">
+      <section class="frame-parent13">
+        <header class="frame-parent14">
+          <div class="image-wrapper2">
+            <img
+              class="image-icon4"
+              loading="lazy"
+              alt=""
+              src="./public/image@2x.png"
+              id="image"
+            />
+          </div>
+          <div class="frame-child11"></div>
+        </header>
+        <div class="frame-wrapper5">
+          <div class="line-group" id="groupContainer">
+            <div class="frame-child12"></div>
+            <div class="polygon-wrapper">
+              <img
+                class="polygon-icon"
+                loading="lazy"
+                alt=""
+                src="./public/polygon-1.svg"
+              />
+            </div>
+            <div class="back-to-recipes2">Back to recipes</div>
+          </div>
+        </div>
+      </section>
+      <section class="questions-inner">
+        <div class="rectangle-parent2">
+          <img
+            class="frame-child13"
+            loading="lazy"
+            alt=""
+            src="./public/rectangle-6@2x.png"
+            id="rectangleImage"
+          />
+
+          <div class="frame-wrapper6">
+            <div class="instance-parent">
+              <div class="group-div" data-scroll-to="groupContainer">
+                <div class="instance-child"></div>
+                <div class="taste-it-fingers">Taste it (fingers crossed)</div>
+              </div>
+              <div class="rectangle-parent3">
+                <div class="instance-item"></div>
+                <div class="taste-it-fingers1">
+                  Cook with just intuition like a pro
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions-child">
+        <div class="question-2-parent">
+          <img
+            class="question-2-icon"
+            loading="lazy"
+            alt=""
+            src="./public/question-2@2x.png"
+          />
+
+          <div class="instance-group">
+            <div class="rectangle-parent4">
+              <div class="instance-inner"></div>
+              <div class="taste-it-fingers2">Do a shoulder shimmy</div>
+            </div>
+            <div class="instance-wrapper">
+              <div class="rectangle-parent5">
+                <div class="instance-child1"></div>
+                <div class="taste-it-fingers3">
+                  Call your Mum (You never learn how to function as an adult)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions-inner1">
+        <div class="question-3-parent">
+          <img
+            class="question-3-icon"
+            loading="lazy"
+            alt=""
+            src="./public/question-3@2x.png"
+          />
+
+          <div class="rectangle-parent6">
+            <div class="instance-child2"></div>
+            <div class="taste-it-fingers4">The smell coming from the bins</div>
+          </div>
+          <div class="rectangle-parent7">
+            <div class="instance-child3"></div>
+            <div class="taste-it-fingers5">
+              The gathering of fruit flies in your kitchen
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions-inner2">
+        <div class="question-4-parent">
+          <img
+            class="question-4-icon"
+            loading="lazy"
+            alt=""
+            src="./public/question-4@2x.png"
+          />
+
+          <div class="instance-container">
+            <div class="rectangle-parent8">
+              <div class="instance-child4"></div>
+              <div class="taste-it-fingers6">
+                Challenge the ingredients to a thumb war
+              </div>
+            </div>
+            <div class="instance-frame">
+              <div class="rectangle-parent9">
+                <div class="instance-child5"></div>
+                <div class="taste-it-fingers7">
+                  Start with the chicken, make sure there is never an egg
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions-inner3">
+        <div class="rectangle-parent10">
+          <div class="frame-child14" id="rectangle"></div>
+          <h3 class="get-your-results">Get your results !</h3>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer-child"></div>
+        <div class="disclaimer-please-container8">
+          <span class="disclaimer-please-container9">
+            <p class="disclaimer4">
+              <b>Disclaimer !</b>
+            </p>
+            <p class="blank-line9">
+              <span>
+                <span class="blank-line10">&nbsp;</span>
+              </span>
+            </p>
+            <p class="please-note-this-website-is-in4">
+              <span>
+                <span
+                  >Please note this website is intended for entertainment
+                  purposes only. The recipes, tips, and questions provided are
+                  all in good fun and should not be taken seriously. Please
+                  don't try this at home... unless you're prepared for some
+                  deliciously chaotic surprises!"
+                </span>
+              </span>
+            </p>
+          </span>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var image = document.getElementById("image");
+      if (image) {
+        image.addEventListener("click", function (e) {
+          window.location.href = "./home-screen.html";
+        });
+      }
+      
+      var groupContainer = document.getElementById("groupContainer");
+      if (groupContainer) {
+        groupContainer.addEventListener("click", function (e) {
+          window.location.href = "./home-screen.html";
+        });
+      }
+      
+      var rectangleImage = document.getElementById("rectangleImage");
+      if (rectangleImage) {
+        rectangleImage.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='groupContainer']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          window.location.href = "./results.html";
+        });
+      }
+      </script>
+  </body>
+</html>

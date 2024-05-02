@@ -1,4 +1,259 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="home-screen">
+      <div class="home-screen-child"></div>
+      <section class="frame-parent">
+        <header class="image-wrapper">
+          <img
+            class="image-icon"
+            loading="lazy"
+            alt=""
+            src="./public/image@2x.png"
+          />
+        </header>
+        <div class="quiz-button-wrapper">
+          <div class="quiz-button">
+            <div class="quiz-button-child"></div>
+            <b class="take-the-quiz" id="takeTheQuiz">Take the quiz</b>
+            <b class="take-the-quiz1" id="takeTheQuiz1">Take the quiz</b>
+            <b class="take-the-quiz2" id="takeTheQuiz2">Take the quiz</b>
+            <b class="take-the-quiz3" id="takeTheQuiz3">Take the quiz</b>
+          </div>
+        </div>
+        <div class="image-8-wrapper">
+          <img
+            class="image-8-icon"
+            loading="lazy"
+            alt=""
+            src="./public/image-8@2x.png"
+            id="image8"
+          />
+        </div>
+        <div class="difficulty-label-wrapper">
+          <div class="difficulty-label"></div>
+        </div>
+        <div class="frame-group">
+          <div class="difficulty-1-wrapper">
+            <div class="difficulty-1">
+              <span class="difficulty-1-txt-container">
+                <span class="difficulty-11">Difficulty 1</span>
+                <span> </span>
+              </span>
+            </div>
+          </div>
+          <div class="frame-container">
+            <div class="image-2-parent">
+              <img
+                class="image-2-icon"
+                loading="lazy"
+                alt=""
+                src="./public/image-2@2x.png"
+                id="image2"
+              />
+
+              <div class="a-magical-crunchy">
+                A Magical Crunchy Morning Delight: Cereal
+              </div>
+            </div>
+            <div class="image-3-parent">
+              <img
+                class="image-3-icon"
+                loading="lazy"
+                alt=""
+                src="./public/image-3@2x.png"
+                id="image3"
+              />
+
+              <div class="a-golden-crispy">A Golden Crispy Creation: Toast</div>
+            </div>
+            <div class="disclaimer-box">
+              <img
+                class="image-4-icon"
+                loading="lazy"
+                alt=""
+                src="./public/image-4@2x.png"
+                id="image4"
+              />
+
+              <div class="a-warming-soothing">
+                A warming soothing cup of bliss: Tea
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="line-parent">
+        <div class="frame-child"></div>
+        <div class="frame-wrapper">
+          <div class="frame-div">
+            <div class="difficulty-2-wrapper">
+              <div class="difficulty-2">Difficulty 2</div>
+            </div>
+            <div class="frame-parent1">
+              <div class="image-5-parent">
+                <img
+                  class="image-5-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-5@2x.png"
+                  id="image5"
+                />
+
+                <div class="fruity-fusion-fiesta">
+                  Fruity Fusion Fiesta: Smoothie
+                </div>
+              </div>
+              <div class="image-6-parent">
+                <img
+                  class="image-6-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-6@2x.png"
+                  id="image6"
+                />
+
+                <div class="shell-shock-wonder-a">
+                  Shell-shock wonder: A Boiled egg
+                </div>
+              </div>
+              <div class="image-7-parent">
+                <img
+                  class="image-7-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./public/image-7@2x.png"
+                  id="image7"
+                />
+
+                <div class="can-tastic-comfort-tinned">
+                  Can-tastic Comfort: Tinned soup
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rectangle-parent">
+        <footer class="frame-item"></footer>
+        <div class="disclaimer-please-container">
+          <span class="disclaimer-please-container1">
+            <p class="disclaimer">
+              <b>Disclaimer !</b>
+            </p>
+            <p class="blank-line">
+              <span>
+                <span class="blank-line1">&nbsp;</span>
+              </span>
+            </p>
+            <p class="please-note-this-website-is-in">
+              <span>
+                <span
+                  >Please note this website is intended for entertainment
+                  purposes only. The recipes, tips, and questions provided are
+                  all in good fun and should not be taken seriously. Please
+                  don't try this at home... unless you're prepared for some
+                  deliciously chaotic surprises!"
+                </span>
+              </span>
+            </p>
+          </span>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var takeTheQuiz = document.getElementById("takeTheQuiz");
+      if (takeTheQuiz) {
+        takeTheQuiz.addEventListener("click", function (e) {
+          window.location.href = "./questions.html";
+        });
+      }
+
+      var takeTheQuiz1 = document.getElementById("takeTheQuiz1");
+      if (takeTheQuiz1) {
+        takeTheQuiz1.addEventListener("click", function (e) {
+          window.location.href = "./questions.html";
+        });
+      }
+
+      var takeTheQuiz2 = document.getElementById("takeTheQuiz2");
+      if (takeTheQuiz2) {
+        takeTheQuiz2.addEventListener("click", function (e) {
+          window.location.href = "./questions.html";
+        });
+      }
+
+      var takeTheQuiz3 = document.getElementById("takeTheQuiz3");
+      if (takeTheQuiz3) {
+        takeTheQuiz3.addEventListener("click", function (e) {
+          window.location.href = "./questions.html";
+        });
+      }
+
+      var image8 = document.getElementById("image8");
+      if (image8) {
+        image8.addEventListener("click", function (e) {
+          window.location.href = "./questions.html";
+        });
+      }
+
+      var image2 = document.getElementById("image2");
+      if (image2) {
+        image2.addEventListener("click", function (e) {
+          window.location.href = "./recipe-1.html";
+        });
+      }
+
+      var image3 = document.getElementById("image3");
+      if (image3) {
+        image3.addEventListener("click", function (e) {
+          window.location.href = "./recipe-7.html";
+        });
+      }
+
+      var image4 = document.getElementById("image4");
+      if (image4) {
+        image4.addEventListener("click", function (e) {
+          window.location.href = "./recipe-8.html";
+        });
+      }
+
+      var image5 = document.getElementById("image5");
+      if (image5) {
+        image5.addEventListener("click", function (e) {
+          window.location.href = "./recipe-9.html";
+        });
+      }
+
+      var image6 = document.getElementById("image6");
+      if (image6) {
+        image6.addEventListener("click", function (e) {
+          window.location.href = "./recipe-10.html";
+        });
+      }
+
+      var image7 = document.getElementById("image7");
+      if (image7) {
+        image7.addEventListener("click", function (e) {
+          window.location.href = "./recipe-11.html";
+        });
+      }
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
